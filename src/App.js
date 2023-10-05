@@ -12,11 +12,11 @@ const App = () => {
   return <div className='overflow-hidden'>
     <Router>
       <Routes>
-        <Route path='/' element={Home}/>
-        <Route path='/product/:id' element={ProductDetails}/>
-        <Sidebar/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/product/:id' element={<ProductDetails/>}/>
         
       </Routes>
+      <Sidebar/>
     </Router>
   </div>;
 };
